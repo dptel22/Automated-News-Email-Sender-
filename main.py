@@ -15,8 +15,9 @@ content = request.json()
 articles = content["articles"]
 
 body = ""
-for article in articles:
+for article in articles[:20]:
     if article["title"] is not None:
-        body = body + article["title"] + "\n" + article["description"] + 2*"\n"
+        body = ("Subject: Today's news" + '\n'+ body + article["title"] + "\n" +
+               article["description"] + '\n' + article["url"]+ 2*"\n")
 
 send_email(message=body)
