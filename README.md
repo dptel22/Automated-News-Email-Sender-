@@ -23,3 +23,8 @@ The script retrieves news data in JSON format, extracts key article details, for
 
 ## Usage
 1. Install dependencies:
+2. Configure `.env` file with API and Gmail credentials
+3. Run
+ 
+## Learning Outcome
+This project demonstrates real-world Python automation, API consumption, secure credential handling, and email automation.
